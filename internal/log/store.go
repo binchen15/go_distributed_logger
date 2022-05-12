@@ -13,7 +13,7 @@ var enc = binary.BigEndian
 const lenWidth = 8
 
 type store struct {
-	File *os.File
+	*os.File
 	mu   sync.Mutex
 	buf  *bufio.Writer
 	size uint64
